@@ -221,3 +221,5 @@ __marimo__/
 .idea/
 # Streamlit
 .streamlit/secrets.toml
+/initial experiments/logs/
+/initial experiments/models/
