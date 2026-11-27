@@ -14,7 +14,7 @@ Using **LunarLander-v3** as a controlled testbed, this project investigates how 
 ### Primary Objective
 Train reinforcement learning agents that reliably solve **LunarLander-v3**, defined by the standard benchmark threshold of achieving a **mean episode return $\ge 200$ over 100 unseen evaluation episodes** (safe, fuel-efficient landing on the target pad).
 ### Secondary Objectives
-1. **Fair Algorithm Comparison:** Compare **DQN** (discrete), **PPO** (discrete and continuous), and **SAC** (continuous) against non-learning reference baseline (uniformly random policy) across both **equal environment-step budgets** and **equal wall-clock time**.
+1. **Fair Algorithm Comparison:** Compare **DQN** (discrete), **PPO** (discrete and continuous), and **SAC** (continuous) against non-learning reference baseline (uniformly random policy) across  **equal environment-step budgets**.
 2. **Hyperparameter Analysis:** Quantify the impact of critical design choices—including Double/Dueling DQN variants, replay buffer capacity, exploration schedules, reward-shaping modifications, structured hyperparameter tuning (`Optuna`).
 3. **Generalization & Robustness Evaluation:** Measure policy degradation on unseen random seeds and under progressive external disturbances (`enable_wind=True`, varying `wind_power` and `turbulence_power`), and evaluate whether randomized-wind training improves robustness.
 4. **Qualitative & Failure-Mode Analysis:** Inspect learned control behavior via trajectory plots (position, velocity, thrust usage) and video recordings, categorizing failure modes such as high-speed crashes, excessive tilt, pad drift, hovering, and fuel waste.
