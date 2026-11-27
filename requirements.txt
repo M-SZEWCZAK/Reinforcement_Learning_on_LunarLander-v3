@@ -1,0 +1,21 @@
+# Python 3.11. Install with:
+#   pip install -r requirements.txt
+# Box2D (pulled in by gymnasium[box2d]) is compiled from source, which needs swig
+# and the Python headers (Debian/Ubuntu: apt install swig python3-dev).
+# For a smaller CPU-only torch, install it first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# Core RL
+gymnasium[box2d]==1.2.2
+stable-baselines3==2.9.2
+torch==2.15.0
+
+# Data / plotting
+numpy==2.4.6
+pandas==3.1.1
+matplotlib==3.11.2
+tensorboard==2.21.0
+
+# Dev / notebooks
+pytest==9.2.0
+ipykernel==7.4.0
